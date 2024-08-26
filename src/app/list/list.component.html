@@ -1,0 +1,126 @@
+<div class="row brd">
+    <div class="col-lg-4 col-md-6 col-12 pe-0 clzBorder1">
+        <div class="col-lft-heading">
+            <h3 class="member py-4"> <span class="members">Members</span>
+                <span class="tableIcon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-table">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
+                        <path d="M3 10h18" />
+                        <path d="M10 3v18" />
+                    </svg>
+                </span>
+            </h3>
+
+            <div class="searchBar">
+                <span class="searchNdIcon">
+                    <!-- filter pipe search Bar -->
+                    <input class="form-control search" type="search" placeholder="Search" aria-label="Search"
+                        [(ngModel)]="userFilter.name">
+                    <i class="fa fa-search lftSearchIcon" aria-hidden="true"></i>
+                </span>
+                <!-- filter pipe end -->
+                <button class="btn btnn btn-outline-secondary filterBtn me-2 " type="submit"><i class="fa fa-filter" aria-hidden="true" (click)="userFilter.name=null"></i></button>
+                <button class="btn btnn addBtn ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="mdo" type="submit"><i class="fa fa-plus-circle" aria-hidden="true"></i> Add
+                    units</button>
+            </div>
+
+            <div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content popUpcolor">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Add message</h1>
+                            <button type="button" class="btn-close xBtn" data-bs-dismiss="modal" aria-label="Close"
+                                (click)="onClose()">
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Id:</label>
+                                    <input type="text" [(ngModel)]="listObj.id" [ngModelOptions]="{standalone: true}"
+                                        class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Name:</label>
+                                    <input type="text" [(ngModel)]="listObj.name" [ngModelOptions]="{standalone: true}"
+                                        class="form-control" id="recipient-name">
+                                </div>
+                                <div>
+                                    <label for="inputGroupSelect01" class="py-2">Standing:</label>
+                                    <select class="form-select" id="inputGroupSelect01" [(ngModel)]="listObj.standing"
+                                        [ngModelOptions]="{standalone: true}">
+                                        <option value="good">good</option>
+                                        <option value="notBad">notBad</option>
+                                        <option value="perfect">perfect</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label pt-4">Gmail:</label>
+                                    <input type="text" [(ngModel)]="listObj.gmail" [ngModelOptions]="{standalone: true}"
+                                        class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Pno:</label>
+                                    <input type="text" [(ngModel)]="listObj.pno" [ngModelOptions]="{standalone: true}"
+                                        class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Cost:</label>
+                                    <input type="text" [(ngModel)]="listObj.cost" [ngModelOptions]="{standalone: true}"
+                                        class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Description:</label>
+                                    <textarea class="form-control" [(ngModel)]="listObj.dsc"
+                                        [ngModelOptions]="{standalone: true}" id="message-text"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                (click)="onClose()">Close</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal"
+                                (click)="onSave()">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-hover clzBorder">
+            <thead>
+            </thead>
+            <tbody>
+                <tr *ngFor="let data of listData | filterBy: userFilter">
+                    <td (click)="goToDetails(data)" [ngClass]="{'active': data.isActive}">
+                        <div class="left-bd-head">
+                            <div class="lft-body">
+                                <div class="ml-2 badgeNdname">
+                                    <span class="badge badge2">{{data.name?.slice(0,1)}}</span>
+                                    <p> <span>{{data.id}}</span> {{data.name}} </p>
+                                </div>
+                                <span class="cost pull-right">{{data.cost}}</span>
+                            </div>
+                            <p class="pra">{{data.dsc}}</p>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    @if (isDisplay == true) {
+    <div class="col-lg-8 col-md-6 col-12 px-0 mt-4 bg-light details-view">
+
+        <span class="Close" (click)="isDisplay = false"><i class="fa fa-times" aria-hidden="true"></i></span>
+
+        <app-details [parentData]="detailsData"></app-details>
+
+    </div>
+    }
+</div>

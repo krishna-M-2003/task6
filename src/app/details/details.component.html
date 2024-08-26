@@ -1,0 +1,523 @@
+<div class="col7 bg-white">
+    <div>
+    <div class="col-rt-heading ps-5">
+        <h3>{{parentData.id}} {{parentData.name}}
+            <button class="btn btnn GoodBtn" type="submit"> {{parentData.standing}} Standing </button>
+        </h3>
+    </div>
+    <span class="dotIcon"><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="1"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-dots"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M19 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /></svg></span>
+    <div class="gm ps-5">
+        <p class="hgm">{{parentData.gmail}}</p>
+        <p>{{parentData.pno}}</p>
+    </div>
+</div>
+
+    <div class="bg-Secondary">
+        <ul class="mt-2">
+            <div class="nav navtabbord ps-5" id="nav-tab" role="tablist">
+                <li class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                    aria-selected="true">Summary</li>
+                <li class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                    aria-selected="false">Billing</li>
+                <li class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                    aria-selected="false">Communication
+                </li>
+                <li class="nav-link" id="nav-Account-tab" data-bs-toggle="tab"
+                    data-bs-target="#nav-Account" type="button" role="tab" aria-controls="nav-Account"
+                    aria-selected="false">Account
+                    Details
+                </li>
+            </div>
+        </ul>
+        <div class="bg-body-Light brd-topRyt">
+            <div class="tab-content bg-light" id="nav-tabContent">
+                <div class="tab-pane fade show active py-4 ps-5" id="nav-home" role="tabpanel"
+                    aria-labelledby="nav-home-tab" tabindex="0">
+                    <div class="rytHeading"> Account Overview</div>
+                    <div class="bg-white me-5 accView">
+                        <div class="left-bd-head">
+                            <div class="ryt-body">
+                                <span class="badge design-batch"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="21" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-user-pentagon">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+                                        <path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
+                                        <path d="M6 20.703v-.703a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v.707" />
+                                    </svg></span>
+                                <p class="mb-0">Change of Ownership
+                            </div>
+                            <p class="pra dataTime">Aprl 14, 2024 AM 10:15</p>
+                        </div>
+                        <div class="left-bd-head">
+                            <div class="ryt-body">
+                                <span class="badge design-batch"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="21" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-receipt">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2m4 -14h6m-6 4h6m-2 4h2" />
+                                    </svg></span>
+                                <p class="mb-0">Bill#1123: Replace pool key
+                            </div>
+                            <p class="pra dataTime">Aprl 14, 2024 AM 10:15</p>
+                        </div>
+                        <div class="left-bd-head">
+                            <div class="ryt-body">
+                                <span class="badge design-batch"><svg class=""
+                                        xmlns="http://www.w3.org/2000/svg" width="21" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-clock">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                                        <path d="M12 7v5l3 3" />
+                                    </svg></span>
+                                <p class="mb-0">Bill#1123: Replace pool key ers
+                            </div>
+                            <p class="pra dataTime">Aprl 14, 2024 AM 10:15</p>
+                        </div>
+                        <div class="left-bd-head">
+                            <div class="ryt-body text-primary">
+                                <p class="showMore">Show More Items
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                            </div>
+                            <div class="vl"></div>
+                        </div>
+                    </div>
+                    <div class="mt-3 rytHeading">Current Status</div>
+                    <div class="bg-white me-5 table2">
+                        <table class="table table-hover">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="ndLeft-bd-head2">
+                                            <div class="ryt-body2 py-1">
+                                                <span>Outstanding Balance</span>
+                                                <span class="Cost2 text-danger">$250.00</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ndLeft-bd-head2">
+                                            <div class="ryt-body2 py-1">
+                                                <span>Overdue Assessment</span>
+                                                <span class="Cost2">$0.00</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ndLeft-bd-head2">
+                                            <div class="ryt-body2 py-1">
+                                                <span>Overdue Assessment Time</span>
+                                                <span class="Cost2">0 days</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="rytHeading">Owner</div>
+                    <div class="bg-white me-5 table2">
+                        <table class="table">
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="owner">Name</td>
+                                    <td class="owner">Phone Number</td>
+                                    <td class="owner">Email</td>
+                                </tr>
+                                <tr>
+                                    <td>Narl Crolo</td>
+                                    <td>(343)3243-342</td>
+                                    <td>nargmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade py-4 ps-5" id="nav-profile" role="tabpanel"
+                    aria-labelledby="nav-profile-tab" tabindex="0">
+                    <div class="rytHeading"> Billing Overview</div>
+
+                    <div class="bg-white me-5 accView">
+                        <div class="left-bd-head">
+                            <div class="ryt-body">
+                                <span class="badge design-batch"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="21" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-user-pentagon">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+                                        <path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
+                                        <path d="M6 20.703v-.703a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v.707" />
+                                    </svg></span>
+                                <p class="mb-0">Change of Ownership
+                            </div>
+                            <p class="pra dataTime">Aprl 14, 2024 AM 10:15</p>
+                        </div>
+                        <div class="left-bd-head">
+                            <div class="ryt-body">
+                                <span class="badge design-batch"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="21" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-receipt">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2m4 -14h6m-6 4h6m-2 4h2" />
+                                    </svg></span>
+                                <p class="mb-0">Bill#1123: Replace pool key
+                            </div>
+                            <p class="pra dataTime">Aprl 14, 2024 AM 10:15</p>
+                        </div>
+                        <div class="left-bd-head">
+                            <div class="ryt-body">
+                                <span class="badge design-batch"><svg class=""
+                                        xmlns="http://www.w3.org/2000/svg" width="21" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-clock">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                                        <path d="M12 7v5l3 3" />
+                                    </svg></span>
+                                <p class="mb-0">Bill#1123: Replace pool key ers
+                            </div>
+                            <p class="pra dataTime">Aprl 14, 2024 AM 10:15</p>
+                        </div>
+                        <div class="left-bd-head">
+                            <div class="ryt-body text-primary">
+                                <p class="showMore">Show More Items
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                            </div>
+                            <div class="vl"></div>
+                        </div>
+                    </div>
+                    <div class="mt-3 rytHeading">Billing Status</div>
+                    <div class="bg-white me-5 table2">
+                        <table class="table table-hover">
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="ndLeft-bd-head2">
+                                            <div class="ryt-body2 py-1">
+                                                <span>Outstanding Balance</span>
+                                                <span class="Cost2">$250.00</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ndLeft-bd-head2">
+                                            <div class="ryt-body2 py-1">
+                                                <span>Overdue Assessment</span>
+                                                <span class="Cost2">$0.00</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ndLeft-bd-head2">
+                                            <div class="ryt-body2 py-1">
+                                                <span>Overdue Assessment Time</span>
+                                                <span class="Cost2">0 days</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="rytHeading">Owner</div>
+                    <div class="bg-white me-5 table2">
+                        <table class="table table-responsive">
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr class="owner">
+                                    <td class="owner">Name</td>
+                                    <td class="owner">Phone Number</td>
+                                    <td class="owner">Email</td>
+                                </tr>
+                                <tr>
+                                    <td>Narl Crolo</td>
+                                    <td>(343)3243-342</td>
+                                    <td>narlcorlogmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade py-4 ps-5" id="nav-contact" role="tabpanel"
+                    aria-labelledby="nav-contact-tab" tabindex="0">
+                    <div class="rytHeading"> Communication Overview</div>
+
+                    <div class="bg-white me-5 accView">
+                        <div class="left-bd-head">
+                            <div class="lft-body">
+                                <span class="badge design-batch"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="21" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-user-pentagon">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+                                        <path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
+                                        <path d="M6 20.703v-.703a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v.707" />
+                                    </svg></span>
+                                <p class="mb-0">Change of Ownership
+                            </div>
+                            <p class="pra dataTime">Aprl 14, 2024 AM 10:15</p>
+                        </div>
+                        <div class="left-bd-head">
+                            <div class="lft-body">
+                                <span class="badge design-batch"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="21" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-receipt">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2m4 -14h6m-6 4h6m-2 4h2" />
+                                    </svg></span>
+                                <p class="mb-0">Bill#1123: Replace pool key
+                            </div>
+                            <p class="pra dataTime">Aprl 14, 2024 AM 10:15</p>
+                        </div>
+                        <div class="left-bd-head">
+                            <div class="lft-body">
+                                <span class="badge design-batch"><svg class=""
+                                        xmlns="http://www.w3.org/2000/svg" width="21" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-clock">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                                        <path d="M12 7v5l3 3" />
+                                    </svg></span>
+                                <p class="mb-0">Bill#1123: Replace pool key ers
+                            </div>
+                            <p class="pra dataTime">Aprl 14, 2024 AM 10:15</p>
+                        </div>
+                        <div class="left-bd-head">
+                            <div class="lft-body text-primary">
+                                <p class="showMore">Show More Items
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                            </div>
+                            <div class="vl"></div>
+                        </div>
+                    </div>
+                    <div class="mt-3 rytHeading">Communication Status</div>
+                    <div class="bg-white me-5 table2">
+                        <table class="table table-hover">
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="ndLeft-bd-head2">
+                                            <div class="ryt-body2 py-1">
+                                                <span>Outstanding Balance</span>
+                                                <span class="Cost2 text-danger">$250.00</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ndLeft-bd-head2">
+                                            <div class="ryt-body2 py-1">
+                                                <span>Overdue Assessment</span>
+                                                <span class="Cost2">$0.00</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ndLeft-bd-head2">
+                                            <div class="ryt-body2 py-1">
+                                                <span>Overdue Assessment Time</span>
+                                                <span class="Cost2">0 days</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="rytHeading">Owner</div>
+                    <div class="bg-white me-5 table2">
+                        <table class="table">
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr class="owner">
+                                    <td class="owner">Name</td>
+                                    <td class="owner">Phone Number</td>
+                                    <td class="owner">Email</td>
+                                </tr>
+                                <tr>
+                                    <td>Narl Crolo</td>
+                                    <td>(343)3243-342</td>
+                                    <td>narlcorlogmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane fade py-4 ps-5" id="nav-Account" role="tabpanel"
+                    aria-labelledby="nav-Account-tab" tabindex="0">
+                    <div class="rytHeading"> Account Details </div>
+
+                    <div class="bg-white me-5 accView">
+                        <div class="left-bd-head">
+                            <div class="lft-body">
+                                <span class="badge design-batch"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="21" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-user-pentagon">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M13.163 2.168l8.021 5.828c.694 .504 .984 1.397 .719 2.212l-3.064 9.43a1.978 1.978 0 0 1 -1.881 1.367h-9.916a1.978 1.978 0 0 1 -1.881 -1.367l-3.064 -9.43a1.978 1.978 0 0 1 .719 -2.212l8.021 -5.828a1.978 1.978 0 0 1 2.326 0z" />
+                                        <path d="M12 13a3 3 0 1 0 0 -6a3 3 0 0 0 0 6z" />
+                                        <path d="M6 20.703v-.703a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v.707" />
+                                    </svg></span>
+                                <p class="mb-0">Change of Ownership
+                            </div>
+                            <p class="pra dataTime">Aprl 14, 2024 AM 10:15</p>
+                        </div>
+                        <div class="left-bd-head">
+                            <div class="lft-body">
+                                <span class="badge design-batch"><svg xmlns="http://www.w3.org/2000/svg"
+                                        width="21" height="24" viewBox="0 0 24 24" fill="none"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-receipt">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path
+                                            d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2m4 -14h6m-6 4h6m-2 4h2" />
+                                    </svg></span>
+                                <p class="mb-0">Bill#1123: Replace pool key
+                            </div>
+                            <p class="pra dataTime">Aprl 14, 2024 AM 10:15</p>
+                        </div>
+                        <div class="left-bd-head">
+                            <div class="lft-body">
+                                <span class="badge design-batch"><svg class=""
+                                        xmlns="http://www.w3.org/2000/svg" width="21" height="24"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-clock">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                                        <path d="M12 7v5l3 3" />
+                                    </svg></span>
+                                <p class="mb-0">Bill#1123: Replace pool key ers
+                            </div>
+                            <p class="pra dataTime">Aprl 14, 2024 AM 10:15</p>
+                        </div>
+                        <div class="left-bd-head">
+                            <div class="lft-body text-primary">
+                                <p class="showMore">Show More Items
+                                    <span>
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                            </div>
+                            <div class="vl"></div>
+                        </div>
+                    </div>
+                    <div class="mt-3 rytHeading">Account Status</div>
+                    <div class="bg-white me-5 table2">
+                        <table class="table table-hover">
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="ndLeft-bd-head2">
+                                            <div class="ryt-body2 py-1">
+                                                <span>Outstanding Balance</span>
+                                                <span class="Cost2">$250.00</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ndLeft-bd-head2">
+                                            <div class="ryt-body2 py-1">
+                                                <span>Overdue Assessment</span>
+                                                <span class="Cost2">$0.00</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="ndLeft-bd-head2">
+                                            <div class="ryt-body2 py-1">
+                                                <span>Overdue Assessment Time</span>
+                                                <span class="Cost2">0 days</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="rytHeading">Owner</div>
+                    <div class="bg-white me-5 table2">
+                        <table class="table tableRadious">
+                            <thead>
+                            </thead>
+                            <tbody>
+                                <tr class="owner">
+                                    <td class="owner">Name</td>
+                                    <td class="owner">Phone Number</td>
+                                    <td class="owner">Email</td>
+                                </tr>
+                                <tr>
+                                    <td>Narl Crolo</td>
+                                    <td>(343)3243-342</td>
+                                    <td>narlcorlogmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

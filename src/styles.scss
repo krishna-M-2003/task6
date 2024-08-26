@@ -1,1 +1,512 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    background: #ddd;
+    padding: 8px;
+}
+
+.bgColor{
+    padding: 12px;
+    background: white;
+    border-radius: 13px;
+}
+
+.btn-light {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    height: 35px;
+    padding-top: 3px;
+}
+
+.dropdown {
+    margin-left: 35px;
+}
+
+.dropdown-menu.show{
+    background: #c6c7c8;
+    margin-left: 5px
+}
+
+.DownArrow{
+    color: #b2b2b2;
+}
+
+.navbar-collapse {
+    justify-content: end;
+}
+
+.fa-angle-down {
+    margin-right: 25px;
+    color: #b2b2b2;
+}
+
+.redDot {
+    padding: 3px;
+    left: 11px;
+    top: 2px;
+}
+
+.span {
+    border: 2px solid;
+}
+
+.icon-b {
+    border-radius: 31px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.Last-i-b {
+    margin-top: 5px;
+}
+
+.col-rt-heading {
+    display: inline-flex;
+}
+
+.GoodBtn {
+    margin-left: 15px;
+    background: lightgreen;
+    padding-top: 2px !important;
+    font-size: small !important;
+    height: 74% !important;
+}
+
+.gm {
+    opacity: 0.7;
+    display: flex;
+    font-size: small;
+}
+
+.hgm {
+    margin-right: 20px;
+}
+
+.badgeTop {
+    background-color: #d177ad;
+    height: 22px;
+}
+
+.badge1 {
+    background-color: #7780d1;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    padding-top: 9px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.brd {
+    border-top: 1px solid;
+    border-color: lightgray;
+}
+
+.searchBar {
+    display: flex;
+    margin-left: 55px;
+}
+
+
+.col-lft-heading {
+    color: lightgrey;
+    padding-bottom: 20px;
+}
+
+.member {
+    color: #111;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 35px;
+    margin-bottom: 0px;
+}
+
+.tableIcon {
+    margin-left: 20px;
+    opacity: 0.5;
+}
+
+.search {
+    width: 70%;
+    // margin-right: 20px;
+    padding-left: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.searchNdIcon {
+    position: relative;
+    // margin-right: 88px;
+    // margin-right: .25rem !important;  
+    right: 28px;
+}
+
+.lftSearchIcon {
+    position: absolute;
+    top: 11px;
+    left: 8px;
+}
+
+.addBtn {
+    background-color: #0126df;
+    color: white;
+    z-index: 1;
+}
+
+.addBtn:hover {
+    color: #111;
+}
+
+.xBtn {
+    color: #111;
+}
+
+.btnn {
+    height: 37px;
+    padding-top: 6px;
+    font-size: small;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.filterBtn {
+    // margin-left: -178px;
+    z-index: 1;
+    margin-left: -87px;
+}
+
+// .table-active{
+//     background-color: #77a1d1;
+// }
+
+td.active{
+    background-color: #e1e3e9;
+}
+
+.badge2 {
+    width: 33px;
+    height: 33px;
+    padding-top: 10px;
+    margin-right: 13px;
+    background-color: #d17777;
+    margin-top: -5px;
+}
+
+tr:nth-child(2) .badge2 {
+    background: #d1be77;
+}
+
+.badge3 {
+    width: 33px;
+    height: 33px;
+    padding-top: 10px;
+    margin-right: 13px;
+    background-color: #d1be77;
+    margin-top: -3px;
+}
+
+tr:nth-child(3) .badge2 {
+    background-color: #77d1c1;
+}
+
+.badge4 {
+    width: 33px;
+    height: 33px;
+    padding-top: 10px;
+    margin-right: 13px;
+    background-color: #77d1c1;
+    margin-top: -3px;
+}
+
+tr:nth-child(4) .badge2 {
+    background-color: #77a1d1;
+}
+
+.badge5 {
+    width: 33px;
+    height: 33px;
+    padding-top: 10px;
+    margin-right: 13px;
+    background-color: #77a1d1;
+    margin-top: -3px;
+}
+
+tr:nth-child(5) .badge2 {
+    background-color: #d177ad;
+}
+
+.badge6 {
+    width: 33px;
+    height: 33px;
+    padding-top: 10px;
+    margin-right: 13px;
+    background-color: #d177ad;
+    margin-top: -3px;
+}
+
+tr:nth-child(5) .badge2 {
+    background-color: #7780d1;
+}
+
+.badge7 {
+    width: 33px;
+    height: 33px;
+    padding-top: 10px;
+    margin-right: 13px;
+    background-color: #7780d1;
+    margin-top: -3px;
+}
+
+// tr:nth-child(6) .badge7 {
+//     background-color: ;
+// }
+
+.lft-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lft-body p {
+    font-weight: 400;
+}
+
+.badgeNdname{
+    display: flex;
+}
+
+.cost {
+    font-weight: 500;
+}
+
+.Cost2 {
+    font-weight: 500;
+    color: #111;
+}
+
+.left-bd-head {
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pra {
+    font-size: small;
+    opacity: 0.7;
+}
+
+.tbody {
+    border-right: 2px solid;
+    border-color: inherit;
+}
+
+.clzBorder1 {
+    border-right: 1px solid lightgray;
+}
+
+.clzBorder {
+    border-top: 1px solid;
+    border-color: lightgray;
+}
+
+.nav-link {
+    color: gray;
+}
+
+.nav-link.active {
+    color: blue;
+    border-bottom: 2px solid;
+}
+
+.col-7 {
+    padding-left: 0px;
+}
+
+.col-5 {
+    padding-right: 0px;
+}
+
+.accView {
+    position: relative;
+    border-radius: 6px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.vl {
+    border-left: 2px solid #eff0f1;
+    height: 160px;
+    position: absolute;
+    top: 38px;
+    left: 47px;
+}
+
+.ndLeft-bd-head2 {
+    color: #646464;
+}
+
+ul {
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+.showMore {
+    color: #0227df;
+    margin-left: 58px;
+    padding-bottom: 8px;
+}
+
+p.showMore:hover {
+    color: #638ed4;
+}
+
+.navtabbord {
+    border-bottom: 1px solid;
+    color: lightgray;
+    margin-top: -13px;
+}
+
+.ryt-body{
+    display: flex;
+}
+
+.ryt-body2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table2 {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     border-radius: 10px;
+}
+
+.design-batch {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    padding-top: 5px;
+    margin-right: 25px;
+    color: black;
+    background-color: #eff0f1;
+    z-index: 1;
+}
+
+.billIcon {
+    width: 21px;
+}
+
+.dotIcon {
+    float: right;
+    margin-right: 35px;
+}
+
+.dataTime {
+    margin-left: 60px;
+}
+
+.owner {
+    color: #686868 !important;
+}
+
+.rytHeading {
+    font-weight: 500;
+    font-size: large;
+    margin-bottom: 15px
+}
+
+.Lft-body3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+table tr:first-of-type td:last-child {
+    border-top-right-radius: 5px;
+}
+
+table tr:first-of-type td:first-child {
+    border-top-left-radius: 5px;
+}
+
+table tr:last-of-type td:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+table tr:last-of-type td:last-child {
+    border-bottom-right-radius: 5px;
+}
+
+.popUpcolor {
+    color: black;
+}
+
+// .table a
+// {
+//     text-decoration:none;
+// }
+
+// .overallBody{
+//     border-radius: 10px;
+// }
+
+// #rcorners1 {
+//     border-radius: 25px;
+//   }
+
+/* From Uiverse.io by nikk7007 */
+button.GoodBtn {
+    // padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+
+button.GoodBtn::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+button.GoodBtn:hover::before {
+    width: 105%;
+}
+
+button:hover {
+    color: #111;
+}
+
+.Close {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .details-view {
+      position: fixed;
+      top: 0;
+      left:0;
+      bottom: 0;
+      right: 0;
+      overflow: auto;
+      z-index: 1;
+    }
+    .Close {
+        display: block;
+    }
+  }
